@@ -1,0 +1,104 @@
+/*#Logo{
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}*/
+
+*{
+	margin: 0px;
+}
+
+.ButtonClass{
+	padding-left: 40px;
+	display: inline-block;
+}
+
+.Button{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 200px;
+	font-size: 20px;
+	background-color: white;
+}
+
+.Button:hover{
+	color: cyan;
+	background-color: #B6B6B6;
+}
+
+#Button2{
+	margin-left: 40px;
+}
+
+.body{
+	height: 100%;
+	margin: 5px;
+}
+
+#Title{
+	width: 100%;
+	margin: 0;
+	font-size: 20px;
+	color: black;
+	display: table-cell;
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.Use{
+	margin: 15px;
+	font-size: 20px;
+	color: #5F5F5F ;
+}
+
+#AboutDesc{
+	margin: 15px;
+	padding-left: 10px;
+	color: #7E7E7E ;
+}
+
+
+body{
+	background-color: #FFFFFF ;
+}
+
+.top {
+	width: 100%;
+	height: 75px;
+	vertical-align: middle;
+	background: url(Pics/RUN+IT+BACK-logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #CE8500;
+}
+
+ul{
+	vertical-align: middle;
+	display: inline-block;
+	padding-left: 85px;
+	padding-top: 25px;
+	
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: white;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 500;
+}
+
+ul li a:hover{
+	color: cyan;
+}
+
+
+.CreateForm{
+
+}
