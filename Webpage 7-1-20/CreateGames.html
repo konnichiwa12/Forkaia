@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUN IT BACK | Pick Up Games Near Me</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="top">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="MyGames.html">MyGames</a></li>
+			<li><a href="SignUp.html">Sign Up</a></li>
+			<li><a href="LogIn.html">Log In</a></li>
+		</ul>
+	</nav>
+
+	<div class="body">
+		<h1 id="Title">Create Games</h1>
+		<p class="Use">Fill out the following information for your pick up game: <br><br>
+		Required:</p>
+		<form id="FillOut">
+			<fieldset>
+				<label for="fname" class="FillOutLabel">First Name: </label>
+				<input type="text" class="tbox" name="first">
+				<label for="lname" class="FillOutLabel">Last Name: </label>
+				<input type="text" class="tbox" name="last">
+				<label for="email" class="FillOutLabel">Your Email: </label>
+				<input type="text" class="tbox" name="email">
+				<label for="phone" class="FillOutLabel">Your Phone Number: </label>
+				<input type="text" class="tbox" name="phonenumber">
+			</fieldset>
+		</form>
+		<br/><br/>
+		<form id="FillOut">
+			<fieldset>
+				<label for="Ad" class="FillOutLabel">Address: </label>
+				<input type="text" class="tbox" name="Ad" id="Address">
+				<label for="Cty" class="FillOutLabel">City: </label>
+				<input type="text" class="tbox" name="Cty">
+				<label for="ZC" class="FillOutLabel">Zip Code: </label>
+				<input type="text" class="tbox" name="ZC">
+				<label for="NameArea" class="FillOutLabel">Name of Area: </label>
+				<input type="text" class="tbox" name="NameArea">
+			</fieldset>
+		</form>
+		<p class="Use">Optional: </p>
+		<form id="FillOut" id="BioTag">
+			<fieldset >
+				<p>Info (Max 90 words):</p>
+				<textarea type="biography" class="tbox" id="Bio" name="Bio"></textarea>
+			</fieldset>
+		</form>
+		<br/><br/>
+		<form id="FillOut">
+			<fieldset>
+				<label for="MaxP" class="FillOutLabel">Max Number of People: </label>
+				<input type="number" class="tbox" name="MaxP" id="MaxPeople">
+				<label for="Private" class="FillOutLabel">Private Game? Yes : </label>
+				<input type="checkbox" class="tbox" name="Private">
+			</fieldset>
+		</form>
+		<br/> <br/>
+		<a href="CreateGameConfirm.html">
+			<button class="Button" id="ButtonConf">Confirm</button>
+		</a>
+	</div>
+</body>
+</html>
