@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUN IT BACK | Search Games</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body>
+	<!-- This nav section is the bar at the top -->
+	<nav>
+		<!-- div class top holds all of the page links -->
+		<div  class="top">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="MyGames.html">MyGames</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+			</ul>
+		</div>
+		<!-- div class SM holds all of the images that are links to future social media pages -->
+		<div class="SM">
+			<a href="http://facebook.com" class="SMTA"><img src="Pics/f_logo_RGB-Hex-Blue_512.png" id="fb" class="SMT"></a>
+			<a href="http://twitter.com" class="SMTA"><img src="Pics/download.png" id="tw" class="SMT"></a>
+			<a href="http://reddit.com" class="SMTA"><img src="Pics/59486444-3699ab80-8e71-11e9-9f9a-836e431dcbfd.png" id="rd" class="SMT"></a>
+
+		</div>
+	</nav>
+	<!-- contains all elements for input (allows user to choose method of search)-->
+	<div class="body">
+		<h1 id="Title">Search For Games</h1>
+		<br/><br/>
+		<!-- method: by name -->
+		<!-- privacy -->
+		<div class="method">
+			<label class="Use" for="method1">Search by name or ID?</label> <br>
+			<label id="methodline" class="#" for="method1">Name: </label>
+			<input type="radio" name="method1" id="method1" onclick="check('method1', 'method2')" checked>
+			<label id="methodline" for="method1">ID: </label>
+			<input type="radio" name="method2" id="method2" onclick="check('method2', 'method1')" >
+		</div>
+		<br>
+		<label for="Yes" class="Use" >Private Game?</label>
+		<button type="button" name="Yes" id="Yes" onclick="enable('PrivatePW1')">Yes</button>
+		<button type="button" name="No" id="No" onclick="disable('PrivatePW1')">No</button>
+		<!-- password -->
+		<label for="Pw" class="Use">Password: </label>
+		<input type="text" class="tbox" id="PrivatePW1" name="Pw" disabled="disabled">
+		<div class="formback">
+			<p class="Use">Search by Name: </p>
+			<form id="FillOut">
+				<fieldset>
+					<!-- first name -->
+					<label for="fname" class="FillOutLabel">First Name: </label>
+					<input type="text" class="tbox" name="fname" id="fname">
+					<!-- last name -->
+					<label for="lname" class="FillOutLabel">Last Name: </label>
+					<input type="text" class="tbox" name="lname" id="lname">
+					<!-- email -->
+					<label for="email" class="FillOutLabel">Email: </label>
+					<input type="text" class="tbox" name="email" id="email">
+				</fieldset>
+			</form>
+			<br/><br/>
+		</div>
+		<br/> <br/>
+		<!-- method: by ID -->
+		<div class="formback">
+			<p class="Use">Search by ID: </p>
+			<form id="FillOut">
+				<fieldset>
+					<!-- ID -->
+					<label for="ID" class="FillOutLabel">ID: </label>
+					<input type="text" class="tbox" name="ID" id="id">
+				</fieldset>
+			</form>
+			<br/> <br/>
+		</div>
+		<br/> <br/>
+		<!-- goes to search results page -->
+		<a href="CreateGameConfirm.html">
+			<button class="Button" id="ButtonConf" onclick="alertstatus()">Confirm</button>
+		</a>
+	</div>
+</body>
+</html>
