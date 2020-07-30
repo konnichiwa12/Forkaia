@@ -1,0 +1,274 @@
+/*#Logo{
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}*/
+
+*{
+	margin: 0px;
+}
+/* class for div that contains buttons */
+.ButtonClass{
+	padding-left: 40px;
+	display: inline-block;
+}
+
+/* class for buttons */
+.Button{
+	font-family: "Times New Roman";
+	height: 60px;
+	width: 190px;
+	color:white;
+	font-size: 20px;
+	background: url(Pics/812KIWTmlRL._AC_SY355_.jpg);
+	background-repeat: no-repeat;
+	background-size: 225px;
+	background-position: 73% 60%;
+	border-radius: 18px;
+	outline: none;
+}
+/* css for button hover */
+.Button:hover{
+	color: cyan;
+	background-color: #B6B6B6;
+	background-size: 300px;
+
+}
+/* extra formatting for yes and no buttons */
+#Yes{
+	background-color: white;
+	border-radius: 10px;
+}
+
+#No{
+	background-color: darkgray;
+	border-radius: 10px;
+}
+
+
+/* extra formatting for login button in index.html */
+#Button2{
+	margin-left: 40px;
+}
+
+.GameList{
+	height: 100%
+}
+
+#required{
+	font-size: 12px;
+	color: red;
+	padding-left: 25px;
+}
+
+/* general formatting for the body of the page (excluding nav tag) */
+#body{
+	height: 100%;
+	margin: 5px;
+}
+/* formatting for name of the page at the top (below nav) */
+#Title{
+	width: 100%;
+	margin: 0;
+	font-size: 20px;
+	color: black;
+	display: table-cell;
+	padding: 10px;
+	padding-top: 0px;
+}
+/* formatting for h1 tag text */
+.Use{
+	margin: 15px;
+	font-size: 20px;
+	color: black ;
+}
+/* formatting for p text */
+#AboutDesc{
+	margin: 15px;
+	padding-left: 10px;
+	color: #424242 ;
+}
+
+/* general body formatting (inlcuding nav) */
+body{
+	background-color: #FFFFFF;
+	background: url(Pics/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* formatting of nav tag */
+.top {
+	height: 75px;
+	vertical-align: middle;
+	background: url(Pics/RUN+IT+BACK-logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #CE8500;
+	display: inline-block;
+	width: 70%;
+}
+
+
+/* formatting for unordered list area */
+ul{
+	padding-left: 85px;
+	width: 70%;
+	height: 75px;
+	margin-right: 0px;
+}
+/* formatting of list items in unordered list */
+ul li{
+	list-style: none;
+	float: left;
+	vertical-align: middle;
+	padding-top: 25px;
+	display: inline-block;
+}
+/* formatting of link text in li in ul */
+ul li a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: white;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 500;
+}
+/* formatting for ul hover */
+ul li a:hover{
+	color: cyan;
+}
+
+/* formatting for form tags */
+#FillOut{
+	margin-left: 40px;
+	width: 94%;
+	background-color: rgb(0, 0, 0, 0.3);
+
+}
+.formback{
+	background-color: rgb(0, 0, 0, 0.1);
+	height: 120%;
+	width: 80%;
+}
+
+/* formatting for labels in form tags */
+.FillOutLabel{
+	padding-left: 5px;
+	color: white;
+}
+/* extra formatting for bio input text tag in CreateGames.html */
+
+#Info{
+	color: white;
+}
+
+/* extra formatting for bio input text tag in SignUp.html */
+#Bio{
+	width: 99%;
+	height: 60px;
+}
+/* extra formatting for confirm buttons*/
+#ButtonConf{
+	margin-left:30px;
+}
+/* extra formatting for address input tags */
+#Address{
+	width: 285px;
+}
+/* extra formatting for max people input tags*/
+#MaxPeople{
+	width: 40px;
+}
+/* formatting for social media picture links at top right of page */
+.SM{
+	text-align: right;
+	vertical-align: middle;
+	display: inline-block;
+	background-color: #CE8500;
+	height: 45px;
+	width: 25%;
+	padding: 10px;
+	margin: 0px;
+}
+/* additional formatting of nav tag */
+nav{
+	width: 100%;
+	background-color: #CE8500;
+	height: 78px;
+}
+/* formatting for images of social media picture links */
+.SMTA{
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* additional formatting for social media picture links*/
+#fb{
+	width:45px;
+}
+
+#tw{
+	width: 45px;
+}
+
+#rd{
+	width: 45px;
+}
+
+/* formatting of text links */
+.normlink{
+	text-decoration: none;
+}
+
+#methodline{
+	margin-left: 40px
+}
+
+.GameList{
+	margin: 10px;
+	margin-top: 0px;
+	height: 800px;
+	background-color: rgb(182, 182, 182, 0.5);
+}
+
+.GameListHeader{
+	background-color: rgb(99, 99, 99, 0.2);
+	margin: 10px;
+	padding-left: 10px;
+}
+
+.GameListText{
+	color: white;
+	font-size: 20px;
+	display: inline-block;
+}
+
+.GameListContent{
+	height: 93%;
+}
+
+.GameListCols{
+	margin: 5px;
+	height: 100%;
+	width: 220px;
+	display: inline-block;
+	background-color: rgb(99, 99, 99, 0.2);
+
+}
+
+#GameListColsInfo{
+	width: 335px;
+	display: inline-block;
+}
+
+.timebox{
+	width: 50px
+}
+
+#am{
+	background-color: darkgray;
+}
+
+#pm{
+	background-color: white;
+}
