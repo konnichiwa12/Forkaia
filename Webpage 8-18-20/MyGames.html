@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>RUN IT BACK | MyGames</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script>
+	window.onload = function(){
+			let num = window.localStorage.getItem("numOfGames");
+			for (let i = 1; i <= num; i++){
+				let currKey = window.localStorage.key(i);
+				let currGame = JSON.parse(window.localStorage.getItem(currKey));
+				document.getElementById(i + 'name').innerHTML = currGame.fname + ' ' + currGame.lname;
+				document.getElementById(i + 'address').innerHTML = currGame.address;
+				document.getElementById(i + 'city').innerHTML = currGame.city + ' ' + currGame.zip;
+				document.getElementById(i + 'id').innerHTML = currGame.id;
+				document.getElementById(i + 'mp').innerHTML = currGame.maxp;
+				document.getElementById(i + 'info').innerHTML = currGame.info;
+			}
+		}
+		function genID(){
+			let id = '';
+			let characterList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+			let numChar = characterList.length;
+			let idLength = Math.floor(Math.random()*10 + 10);
+			for (let i = 0; i < idLength; i++){
+				id += characterList.charAt(Math.floor(Math.random()*numChar));
+			}
+			document.getElementById('id').value = id;
+		}
+		function editgame(){
+			let num = document.getElementById('gamenum').value;
+			if (num > window.localStorage.getItem("numOfGames")){
+				document.getElementById('edittool').style.display = "none";
+				alert("Game " + num + " doesn't exist.");
+				return;
+			}
+			document.getElementById('edittool').style.display = "inline-block";
+		}
+	</script>
+</head>
+<!-- page that shows all of your games and games you will attend -->
+<body>
+	<!-- This nav section is the bar at the top -->
+	<nav>
+		<!-- div class top holds all of the page links -->
+		<div  class="top">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="MyGames.html">MyGames</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+			</ul>
+		</div>
+		<!-- div class SM holds all of the images that are links to future social media pages -->
+		<div class="SM">
+			<a href="http://facebook.com" class="SMTA"><img src="Pics/f_logo_RGB-Hex-Blue_512.png" id="fb" class="SMT"></a>
+			<a href="http://twitter.com" class="SMTA"><img src="Pics/download.png" id="tw" class="SMT"></a>
+			<a href="http://reddit.com" class="SMTA"><img src="Pics/59486444-3699ab80-8e71-11e9-9f9a-836e431dcbfd.png" id="rd" class="SMT"></a>
+
+		</div>
+	</nav>
+	<div id="body">
+		<h1 id="Title">MyGames</h1>
+		<div class="GameList" style="display: inline-block;">
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">Game #</h2>
+				<h2 class="GameListText" style="text-align: left;  word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="0name">Name</h2>
+				<h2 class="GameListText" id="0address">Address</h2>
+				<h2 class="GameListText" id="0city">City</h2>
+				<h2 class="GameListText" id="0id">ID</h2>
+				<h2 class="GameListText" id="0mp">Max People</h2>
+				<h2 class="GameListText" id="0info">Info</h2>
+			</div>
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">1</h2>
+				<h2 class="GameListText" style="text-align: left; word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="1name">-</h2>
+				<h2 class="GameListText" id="1address">-</h2>
+				<h2 class="GameListText" id="1city">-</h2>
+				<h2 class="GameListText" id="1id">-</h2>
+				<h2 class="GameListText" id="1mp">-</h2>
+				<h2 class="GameListText" id="1info">-</h2>
+			</div>
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">2</h2>
+				<h2 class="GameListText" style="text-align: left;word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="2name">-</h2>
+				<h2 class="GameListText" id="2address">-</h2>
+				<h2 class="GameListText" id="2city">-</h2>
+				<h2 class="GameListText" id="2id">-</h2>
+				<h2 class="GameListText" id="2mp">-</h2>
+				<h2 class="GameListText" id="2info">-</h2>
+			</div>
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">3</h2>
+				<h2 class="GameListText" style="text-align: left;word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="3name">-</h2>
+				<h2 class="GameListText" id="3address">-</h2>
+				<h2 class="GameListText" id="3city">-</h2>
+				<h2 class="GameListText" id="3id">-</h2>
+				<h2 class="GameListText" id="3mp">-</h2>
+				<h2 class="GameListText" id="3info">-</h2>
+			</div>
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">4</h2>
+				<h2 class="GameListText" style="text-align: left;word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="4name">-</h2>
+				<h2 class="GameListText" id="4address">-</h2>
+				<h2 class="GameListText" id="4city">-</h2>
+				<h2 class="GameListText" id="4id">-</h2>
+				<h2 class="GameListText" id="4mp">-</h2>
+				<h2 class="GameListText" id="4info">-</h2>
+			</div>
+			<div class="GameListCols">
+				<h2 class="GameListText" style="margin-bottom: 0px; margin-top: 20px;">5</h2>
+				<h2 class="GameListText" style="text-align: left;word-wrap: normal;">________________________</h2>
+				<h2 class="GameListText" id="5name">-</h2>
+				<h2 class="GameListText" id="5address">-</h2>
+				<h2 class="GameListText" id="5city">-</h2>
+				<h2 class="GameListText" id="5id">-</h2>
+				<h2 class="GameListText" id="5mp">-</h2>
+				<h2 class="GameListText" id="5info">-</h2>
+			</div>
+			<div class="GameListCols" style="text-align: center;">
+				<div style="background-color: rgb(99, 99, 99, 0.5); margin: 10px; vertical-align: middle; text-align: center;">
+					<div>
+						<p style="color: white; display: inline-block;">Select Game:</p>
+						<input type="number" name="gamenum" value="1" min="1" max="5" style="width: 30px;" id="gamenum">
+					</div>
+					<button type="button" name="button" class="Button" style="margin-top: 10px; margin-bottom: 30px;" onclick="editgame()">Edit Game</button>
+					<button type="button" name="button" class="Button" style="margin-bottom: 30px;">Clear Game</button>
+					<button type="button" name="button" class="Button" style="margin-bottom: 30px;">See Details</button>
+				</div>
+				<button type="button" name="button" class="Button" style="margin-bottom: 30px;">Clear All</button>
+				<a href="CreateGames.html"><button type="button" name="button" class="Button" style="margin-bottom: 30px;">Create Game</button></a>
+			</div>
+			<div id="edittool" class="GameListCols" style="background-color: rgb(99, 99, 99, 0.5); vertical-align: middle; text-align: center; display: none;">
+				<h2 class='EditToolText'>Enter New Information</h2>
+				<p class="EditToolText">New Name:</p>
+				<input type="text" id="name">
+				<p class="EditToolText">New Address:</p>
+				<input type="text" id="ad">
+				<p class="EditToolText">New City:</p>
+				<input type="text" id="city">
+				<p class="EditToolText" >New ID:</p>
+				<input type="text" id="id">
+				<p class="EditToolText">Max People:</p>
+				<input type="text" id="max">
+				<p class="EditToolText">New Info:</p>
+				<input type="text" style="height: 200px;">
+				<button style="margin-top: 10px; outline: none; border-radius: 9px;;" type="button" name="GenID" onclick="genID()">Auto Generate ID</button>
+				<button class="Button" name="button" style="margin-top: 10px;" onclick="updategame()">Update Game</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
