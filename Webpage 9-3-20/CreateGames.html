@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUN IT BACK | Create Games</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<!-- page for creating a pick up game -->
+<body id="Everything">
+	<!-- This nav section is the bar at the top -->
+	<nav class="navbar">
+		<!-- div class top holds all of the page links -->
+		<div  class="top">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="MyGames.html">MyGames</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+			</ul>
+		</div>
+		<!-- div class SM holds all of the images that are links to future social media pages -->
+		<div class="SM">
+			<a href="http://facebook.com" class="SMTA"><img src="Pics/f_logo_RGB-Hex-Blue_512.png" class="SMA" ></a>
+			<a href="http://twitter.com" class="SMTA"><img src="Pics/download.png" class="SMA" ></a>
+			<a href="http://reddit.com" class="SMTA"><img src="Pics/59486444-3699ab80-8e71-11e9-9f9a-836e431dcbfd.png" class="SMA" ></a>
+			<a href="http://instagram.com" class="SMTA"><img src="Pics/computer-icons-instagram-logo-sticker-logo-instagram-logo-png-clip-art.png" alt="insta" class="SMA"></a>
+
+		</div>
+	</nav>
+	<!-- div class body holds all body elements for creating a game-->
+	<div class="body">
+		<h1 class="Title">Create Games</h1>
+		<p class="required">* Required</p> <br>
+		<p class="Use">Fill out the following information for your pick up game: </p>
+		<div class="FillOutBackground">
+			<p class="Use">Required:</p>
+			<button style="margin-left: 20px; outline: none; border-radius: 9px;" type="button" name="time" onclick="UploadTime()">Use Current Date/Time</button>
+			<button style="margin-left: 20px; outline: none; border-radius: 9px;;" type="button" name="GenID" onclick="genID()">Auto Generate ID</button> <br/><br/>
+			<!-- form id FillOut holds various input boxes that receive necessary information about a pick up game -->
+			<form class="FillOut">
+				<fieldset>
+					<!-- name -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="fname" class="FillOutLabel">First Name: </label>
+						<input type="text" class="tbox" name="fname" id="fname">
+					</div>
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="lname" class="FillOutLabel">Last Name: </label>
+						<input type="text" class="tbox" name="lname" id="lname">
+					</div>
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="email" class="FillOutLabel">Email: </label>
+						<input type="text" class="tbox" name="email" id="email">
+					</div>
+					<!-- date -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="month" class="FillOutLabel">Date (mm/dd/yyyy): </label>
+						<input type="number" class="timebox" name="month" id="month">
+						<strong style="display: inline-block; color: white; font-size: 30px; vertical-align: middle;" >/</strong>
+						<input type="number" class="timebox" name="day" id="day">
+						<strong style="display: inline-block; color: white; font-size: 30px; vertical-align: middle;" >/</strong>
+						<input type="number" class="timebox" name="year" id="year">
+					</div>
+					<!-- time -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="hour" class="FillOutLabel">Time: </label>
+						<input type="number" class="timebox" name="hour" id="timebox1" >
+						<strong style="display: inline-block; color: white; font-size: 20px" >:</strong>
+						<input type="number" class="timebox" name="minute" id="timebox2" >
+						<button type="button" name="am" id="am" onclick="choose1st('am', 'pm')">am</button>
+						<button type="button" name="pm" id="pm" onclick="choose2nd('am', 'pm')">pm</button>
+					</div>
+					<!-- phone number -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="phone" class="FillOutLabel">Your Phone Number (No spaces, No paranthesis): </label>
+						<input type="text" class="tbox" name="phonenumber" id="pn">
+					</div>
+					<!-- Game Name -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="id" class="FillOutLabel">Game ID: </label>
+						<input type="text" class="tbox" name="phonenumber" id="id">
+					</div>
+				</fieldset>
+			</form>
+			<br/><br/>
+			<!-- Location settings -->
+			<form class="FillOut">
+				<fieldset >
+					<!-- street address of pick up game -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="Ad" class="FillOutLabel">Address: </label>
+						<input type="text" class="tbox" name="Ad"  id="Ad">
+					</div>
+					<!-- city of pick up game -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="Cty" class="FillOutLabel">City: </label>
+						<input type="text" class="tbox" name="Cty" id ="Cty">
+					</div>
+					<!-- city of pick up game -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="State" class="FillOutLabel">State: </label>
+						<input type="text" class="tbox" name="State" id ="State">
+					</div>
+					<!-- zip code of pick up game -->
+					<div class="FillOutElts">
+						<label class="required">*</label>
+						<label for="ZC" class="FillOutLabel">Zip Code: </label>
+						<input type="text" class="tbox" name="ZC" id ="ZipC">
+					</div>
+					<!-- Name/description of the area -->
+					<div class="FillOutElts">
+						<label for="NameArea" class="FillOutLabel" id="AreaLabel">Name of Area: </label>
+						<input type="text" class="tbox" name="NameArea" id="Area">
+					</div>
+				</fieldset>
+			</form>
+			<br/> <br/>
+		</div>
+		<div class="FillOutBackground">
+		<p class="Use">Optional: </p>
+		<!-- misc information about the game -->
+			<form class="FillOut" id="BioTag">
+				<fieldset >
+					<p style="color: white;" id="Info">Info (0 out of 200 characters):</p>
+					<textarea type="biography" class="tbox" style="width: 99%; height: 60px;" name="Bio" onkeydown="charCount('Info', this.value, 200)"></textarea>
+				</fieldset>
+			</form>
+			<br/><br/>
+			<!-- optional settings for the pick up game -->
+			<form class="FillOut">
+				<fieldset>
+					<!-- max number of people -->
+					<div class="FillOutElts">
+						<label for="MaxP" class="FillOutLabel">Max Number of People: </label>
+						<input type="number" class="tbox" name="MaxP" style="width: 40px;">
+					</div>
+					<!-- privacy -->
+					<div class="FillOutElts">
+						<label for="Yes" class="FillOutLabel" >Private Game?</label>
+						<button type="button" name="Yes" class="Yes" id="Yes" onclick="enable('PrivatePW','PrivateCF')">Yes</button>
+						<button type="button" name="No" class="No" id="No" onclick="disable('PrivatePW','PrivateCF')">No</button>
+					</div>
+					<!-- password -->
+					<div class="FillOutElts">
+						<label for="Pw" class="FillOutLabel">Password: </label>
+						<input type="password" class="tbox" name="Pw" id="PrivatePW" disabled="disabled">
+					</div>
+					<!-- password confrimation-->
+					<div class="FillOutElts">
+						<label for="Pwc" class="FillOutLabel">Confirm Password: </label>
+						<input type="password" class="tbox" name="Pwc" id="PrivateCF" disabled="disabled">
+					</div>
+				</fieldset>
+			</form>
+			<br/> <br/>
+		</div>
+		<br/> <br/>
+		<!-- Goes to a page that gives confirmation that a game was created successfully -->
+
+
+			<button class="Button" id="ButtonConf" onclick="CreateGamesPageCheck()">Confirm</button>
+
+	</div>
+</body>
+</html>

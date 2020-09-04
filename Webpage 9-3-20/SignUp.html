@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUN IT BACK | Sign Up</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- This nav section is the bar at the top -->
+	<nav>
+		<!-- div class top holds all of the page links -->
+		<div  class="top">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="MyGames.html">MyGames</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+			</ul>
+		</div>
+		<!-- div class SM holds all of the images that are links to future social media pages -->
+		<div class="SM">
+			<a href="http://facebook.com" class="SMTA"><img src="Pics/f_logo_RGB-Hex-Blue_512.png" id="fb" class="SMT"></a>
+			<a href="http://twitter.com" class="SMTA"><img src="Pics/download.png" id="tw" class="SMT"></a>
+			<a href="http://reddit.com" class="SMTA"><img src="Pics/59486444-3699ab80-8e71-11e9-9f9a-836e431dcbfd.png" id="rd" class="SMT"></a>
+
+		</div>
+	</nav>
+	<!-- contains all elements for input -->
+	<div class="body">
+		<h1 id="Title">Sign Up</h1>
+		<!-- links goes to log in page -->
+		<p class="Use">If you already have an account, click <a href="LogIn.html" class="normlink">here</a>. </p>
+		<div class="formback">
+			<p class="Use">Required:</p>
+			<!-- input for name/email/phone -->
+			<form id="FillOut">
+				<fieldset>
+					<!-- first name -->
+					<label for="fname" class="FillOutLabel">First Name: </label>
+					<input type="text" class="tbox" name="first">
+					<!-- last name -->
+					<label for="lname" class="FillOutLabel">Last Name: </label>
+					<input type="text" class="tbox" name="last">
+					<!-- email -->
+					<label for="email" class="FillOutLabel">Your Email: </label>
+					<input type="text" class="tbox" name="email">
+					<!-- phone number -->
+					<label for="phone" class="FillOutLabel">Your Phone Number: </label>
+					<input type="text" class="tbox" name="phonenumber">
+				</fieldset>
+			</form>
+			<br/><br/>
+			<!-- password -->
+			<form id="FillOut">
+				<fieldset>
+					<label for="pw" class="FillOutLabel">Password: </label>
+					<input type="password" class="tbox" name="pass">
+					<label for="pwc" class="FillOutLabel">Confrim Password: </label>
+					<input type="password" class="tbox" name="passconf">
+				</fieldset>
+			</form>
+			<br/><br/>
+		</div>
+		<!-- optional info for account -->
+		<div class="formback">
+			<p class="Use">Optional: </p>
+			<form id="FillOut" id="BioTag">
+				<fieldset >
+					<!-- account bio -->
+					<p id="Info">Bio (Max 90 words):</p>
+					<textarea type="biography" class="tbox" id="Bio" name="Bio"></textarea>
+				</fieldset>
+
+			</form>
+			<br/> <br/>
+		</div>
+		<!-- goes to sign up confirm page -->
+		<a href="#">
+			<button class="Button" id="ButtonConf">Confirm</button>
+		</a>
+	</div>
+</body>
+</html>
