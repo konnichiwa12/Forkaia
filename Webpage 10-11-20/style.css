@@ -1,0 +1,407 @@
+/*#Logo{
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+
+}*/
+
+*{
+	margin: 0px;
+}
+/* class for div that contains buttons */
+.ButtonClass{
+	padding-left: 2.5rem;
+	display: inline-block;
+}
+
+/*Styling used for multiple pages */
+
+	/* class for buttons */
+	.Button{
+		font-family: "Times New Roman";
+		height: 4rem;
+		width: 11rem;
+		color:white;
+		font-size: 1.3rem;
+		background: url(Pics/812KIWTmlRL._AC_SY355_.jpg);
+		background-repeat: no-repeat;
+		background-size: 14rem;
+		background-position: 73% 60%;
+		border-radius: 1rem;
+		outline: none;
+	}
+
+	/* css for button hover */
+	.Button:hover{
+		color: cyan;
+		background-color: #B6B6B6;
+		background-size: 20rem;
+
+	}
+
+	/* general formatting for the body of the page (excluding nav tag) */
+	.body{
+		height: 100%;
+		margin: .5rem;
+	}
+
+	/* extra formatting for yes and no buttons */
+	.Yes{
+		background-color: white;
+		border-radius: 0.5rem;
+	}
+	.No{
+		background-color: darkgray;
+		border-radius: 0.5rem;
+	}
+
+	/* formatting for name of the page at the top (below nav) */
+	.Title{
+		width: 10rem;
+		margin: 0;
+		font-size: 1.5rem;
+		color: black;
+		display: table-cell;
+		padding: 1rem;
+		padding-top: 0px;
+	}
+
+	#AreaLabel{
+		padding-left: 2rem;
+	}
+
+
+	/* formatting for h1 tag text */
+	.Use{
+		margin: 1rem;
+		font-size: 1.25rem;
+		color: black ;
+	}
+
+	/* general body formatting (inlcuding nav) */
+	body{
+		background-color: #FFFFFF;
+		background: url(Pics/bg.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: rgb(0, 0, 0, 0);
+		background-blend-mode: overlay;
+	}
+
+	/* formatting of nav tag */
+	#top {
+		height: 4.8rem;
+		float: left;
+		background: url(Pics/RUN+IT+BACK-logo.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: #CE8500;
+		width: 70%;
+	}
+
+	/*Positioning and styling of social media tiles in nav tag*/
+	#SM{
+		vertical-align: center;
+		text-align: center;
+		display: inline-block;
+		background-color: #CE8500;
+		height: 4.8rem;
+		width: 25%;
+		border-left-style: solid;
+		border-color: #a85100;
+	}
+
+	/*Sizing of social media tiles*/
+	.SMA{
+		width:2.5rem;
+		margin: .4rem .7rem 0rem .7rem;
+		padding: .8125rem;
+	}
+
+	/*formatting of social media tiles*/
+	.navbar{
+		width: 100%;
+		background-color: #CE8500;
+		height: 4.875rem;
+		display: inline-block;
+	}
+
+	/* formatting for unordered list area */
+	ul{
+		padding-left: 5.3125rem;
+		width: 70%;
+		height: 4.6875rem;
+		margin-right: 0;
+	}
+
+	/* formatting of list items in unordered list */
+	ul li{
+		list-style: none;
+		float: left;
+		vertical-align: middle;
+		padding-top: 1.5625rem;
+	}
+
+	/* formatting of link text in li in ul */
+	ul li a{
+		text-decoration: none;
+		padding: 0 1.25rem;
+		color: white;
+		font-family: 'Abril Fatface', cursive;
+		font-weight: 500;
+	}
+
+	/* formatting for ul hover */
+	ul li a:hover{
+		color: cyan;
+	}
+
+	/* <a> link formatting */
+	.normlink{
+		text-decoration: none;
+	}
+
+
+/*Formatting used for searchgames.html and creategames.html
+
+	/* formatting for form tags */
+	.FillOut{
+		margin-left: .8rem;
+		width: 93%;
+		background-color: rgb(0, 0, 0, 0.3);
+		display: inline-block;
+	}
+
+	/*formatting of inputs of forms*/
+	.FillOutElts{
+		display: inline-block;
+		vertical-align: left;
+	}
+
+	/*Background coloring and sizing for form tags*/
+	.FillOutBackground{
+		background-color: rgb(0, 0, 0, 0.1);
+		height: 120%;
+		width: 80%;
+	}
+
+	/* formatting for labels in form tags */
+	.FillOutLabel{
+		padding-left: .3125rem;
+		color: white;
+	}
+
+	/*formatting for "search by name or ID?" in SearchGames.html*/
+	.methodline{
+		margin-left: 2.5rem;
+	}
+
+	/*formatting for am and pm buttons in creategames.html*/
+	#am{
+		background-color: darkgray;
+	}
+	
+	#pm{
+		background-color: white;
+	}
+
+	/*formatting for time input in creategames.html*/
+	.timebox{
+		width: 3.125rem;
+	}
+
+
+
+/*Formatting for ViewGames.html*/
+	.detailElt{
+		color: white;
+		margin-bottom: .8rem;
+		font-size: 1.25rem;
+		text-align: center;
+	}
+
+	.detailbackground{
+		display: inline-block;
+		width: 20%;
+		vertical-align: top;
+		background-color: rgb(0, 0, 0, 0.1);
+		height: 24.625rem;
+		margin: 2rem;
+	}
+
+	/*formatting for required symbol*/
+	.required{
+		font-size: 1rem;
+		color: red;
+		padding-left: 2rem;
+	}
+
+
+
+/*Formatting for settings.html*/
+	.settingbackground{
+		height: 45rem;
+		background-color: rgb(0, 0, 0, 0.3);
+	}
+	.set{
+		padding: 1rem;
+		margin: 1rem;
+		background-color: rgb(0, 0, 0, 0.1);
+		vertical-align: center;
+	}
+
+/*Formatting used for Mygames.html*/
+
+	/*general formatting for the background of GameListCols elements*/
+	.GameList{
+		margin: .625rem;
+		margin-top: 0;
+		height: 50.625rem;
+		background-color: rgb(182, 182, 182, 0.5);
+		height: 120%;
+		white-space: nowrap;
+		overflow-x: auto;
+		width: 1800px;
+	}
+
+	/*formatting of each column that represents each game*/
+	.GameListCols{
+		margin: .3125rem;
+		height: 48rem;
+		width: 12.5rem;
+		background-color: rgb(99, 99, 99, 0.5);
+		vertical-align: top;
+		float: left;
+	}
+
+	/*formatting for text inside GameListCols elements*/
+	.GameListText{
+		font-size: 1.03625rem;
+		width: 95%;
+		color: white;
+		margin-bottom: 3.75rem;
+		text-align: center;
+		word-wrap: break-word;
+	}
+
+	/*extra formatting for the edit tool*/
+	.EditToolText{
+		font-size: 1.03625rem;
+		width: 95%;
+		color: white;
+		margin-top: .625rem;
+		text-align: center;
+	}
+
+
+
+
+
+
+/*responsive CSS */
+
+	@media (max-width: 103rem){
+		body{
+			background-size: 103rem 58rem;
+		}
+	}
+
+	@media (max-width: 98rem){
+		.SMA{
+			width: 2rem;
+			margin: 0rem .5rem 0rem .5rem;
+			padding: .75rem
+		}
+		body .navbar{
+			height: 3.8rem;
+		}
+		.SM{
+			height: 3.8rem;
+		}
+		.top{
+			height: 3.8rem;
+		}
+		body ul li{
+			padding-top: 1.15rem;
+		}
+	}
+
+	@media (max-width: 98rem){
+		.SMA{
+			width: 2rem;
+			margin: 0rem .5rem 0rem .5rem;
+			padding: .75rem;
+		}
+		body .navbar{
+			height: 3.8rem;
+		}
+		.SM{
+			height: 3.8rem;
+			width: 39%;
+		}
+		.top{
+			height: 3.8rem;
+			width: 60%;
+		}
+		body ul li{
+			padding-top: 1.15rem;
+		}
+	}
+
+	@media (max-width: 56.875rem){
+		body{
+			background-position: -4rem 7rem;
+		}
+		.SMA{
+			width: 3rem;
+			margin: 0rem 0rem 0rem .1rem;
+			padding: .3rem;
+		}
+		body .navbar{
+			height: 3.8rem;
+			width: 100%
+		}
+		.SM{
+			height: 3.8rem;
+			width: 100%;
+			border-left-style: none;
+		}
+		.top{
+			height: 3.8rem;
+			width: 100%;
+		}
+		body ul{
+			padding-left: 3rem;
+			width: 100%;
+		}
+		body ul li{
+			padding: 1.4rem 0rem 0rem 0rem;
+		}
+	}
+
+	@media (max-width: 51rem){
+		.required{
+			padding-left: .2rem;
+		}
+		#month{
+			width: 2rem;
+		}
+		#day{
+			width: 2rem;
+		}
+		#year{
+			width: 2rem;
+		}
+		#AreaLabel{
+			padding-left: 1.1rem;
+		}
+		body{
+			background-size: 103rem 62rem;
+		}
+	}
+
+	@media (max-width: 37rem){
+		body{
+			background-size: 103rem 65rem;
+		}
+	}

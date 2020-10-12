@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RUN IT BACK | Settings</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body id="Whole" onload="checklightingmode()">
+	<!-- This nav section is the bar at the top -->
+	<nav class="navbar">
+		<!-- div class top holds all of the page links -->
+		<div  id="top">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="MyGames.html">MyGames</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+				<li><a href="LogIn.html">Log In</a></li>
+			</ul>
+		</div>
+		<!-- div class SM holds all of the images that are links to future social media pages -->
+		<div id="SM">
+			<a href="http://facebook.com" class="SMTA"><img src="Pics/f_logo_RGB-Hex-Blue_512.png" class="SMA" ></a>
+			<a href="http://twitter.com" class="SMTA"><img src="Pics/download.png" class="SMA" ></a>
+			<a href="http://reddit.com" class="SMTA"><img src="Pics/59486444-3699ab80-8e71-11e9-9f9a-836e431dcbfd.png" class="SMA" ></a>
+			<a href="http://instagram.com" class="SMTA"><img src="Pics/computer-icons-instagram-logo-sticker-logo-instagram-logo-png-clip-art.png" alt="insta" class="SMA"></a>
+            <a href=settings.html class="SMTA"><img src="Pics/1524589-200.png" class="SMA" ></a>
+		</div>
+	</nav>
+	<!-- contains all elements for input (allows user to choose method of search)-->
+	<div class="body">
+		<h1 class="Use">Settings</h1>
+        
+        <div class="settingbackground">
+            <div class="set">
+				<label class="detailElt">Appearance: </label>
+				<label class="detailElt" style="margin-left: 3rem;">Light Mode: </label>
+				<input type="radio" class="detailElt" name="Light" onclick="changelighting()" id="Light">
+				<label class="detailElt" style="margin-left: 3rem;">Dark Mode: </label>
+                <input type="radio" class="detailElt" name="Light" onclick="changelighting()" id="Dark">
+			</div>
+        </div>
+	</div>
+</body>
+</html>
